@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tugas Menggambar dengan THREE.JS</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #myCanvas {
+            height: 1vh;
+        }
+        
+        .container {
+            font-size: 16px;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0rem;
+        }
+        
+        select {
+            outline: none;
+            font-size: 14px;
+            background: white;
+            padding: 1em;
+            border-radius: 0.7rem;
+        }
+    </style>
+    <script src="three.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2> Nur Moh Ihsanuddien / 05111940000142</h2>
+        <select name="light" id="light">
+            <option value="0">Ambient Light</option>
+            <option value="1">Directional Light</option>
+            <option value="2">Hemisphere Light</option>
+            <option value="3">Point Light</option>
+            <option value="4">Spotlight</option>
+        </select>
+
+        <canvas id="myCanvas"></canvas>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
